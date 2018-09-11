@@ -15,7 +15,7 @@ public class Test {
         Scanner input1 = new Scanner(System.in);
         
         //Input (month number)
-        System.out.println("Input a number corespoding with a month (1-12 (1 for January, etc.)): ");
+        System.out.println("Input a number corresponding with a month (1-12 (1 for January, etc.)): ");
         int mn = input1.nextInt();
         
        //Array for Days in a Month
