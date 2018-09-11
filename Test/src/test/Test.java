@@ -17,6 +17,7 @@ public class Test {
         //Input (month number)
         System.out.println("Input a number corresponding with a month (1-12 (1 for January, etc.)): ");
         int mn = input1.nextInt();
+       
         
        //Array for Days in a Month
         int [] dim;
@@ -51,10 +52,10 @@ public class Test {
         month[12] = "December";
         
         //Results
-       if (mn>=1 && mn<=12){
-        System.out.println("Theres " + dim[mn] + " in " + month[mn]);
+       if (mn<=1 || mn>=12){
+        System.out.println("Invalid Input"); 
         } else {
-        System.out.println("Invalid Input"); //for in case someone typed 0 which exist in the array but arent used (since all other numbers gives and error for the number not being part of the array)
-        }
+        System.out.println("Theres " + dim[mn] + " in " + month[mn]);
+       }
     }
 }
